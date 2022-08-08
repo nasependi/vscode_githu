@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SIPP Dinkes Garut</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.5/css/selectize.bootstrap5.min.css" integrity="sha512-w4sRMMxzHUVAyYk5ozDG+OAyOJqWAA+9sySOBWxiltj63A8co6YMESLeucKwQ5Sv7G4wycDPOmlHxkOhPW7LRg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/chat.css" rel="stylesheet">
+  <style>
+    .selectize-input:after {
+      border: none!important;
+    }
+    .selectize-input {
+      border: none!important;
+    }
+    .selectize-input:focus {
+      border: none!important;
+      outline: none!important;
+    }
+    .focus {
+      border: none!important;
+      outline: none!important;
+      box-shadow: none!important;
+    }
+  </style>
+
+  <!-- =======================================================
+  * Template Name: Logis - v1.0.1
+  * Template URL: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center ">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <img src="assets/img/sipp.png" alt="">
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Beranda</a></li>
+          <li><a href="#testimoni">Maklumat</a></li>
+          <li><a href="#manufakturing">Manufakturing</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row gy-4 d-flex justify-content-between">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h2 data-aos="fade-up">Sistem Informasi Pelayanan Publik Dinkes Garut</h2>
+          <p data-aos="fade-up" data-aos-delay="100">SIPP Merupakan media informasi elektronik satu pintu meliputi penyimpanan dan pengelolaan informasi serta mekanisme penyampaian informasi dari penyelenggara pelayanan publik kepada masyarakat.</p>
+
+          <div class="form-search d-flex align-items-center mb-3" style="column-gap: 1rem; z-index: 9999; background-color: #fff; padding: 19px; border-radius: 10px; margin-top: 0em;" data-aos="fade-up" data-aos-delay="200" autocomplete="off">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Pilih Instansi</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <select id="search" style="width: 100%;" required>
+              <option value="" style="display: none;">Masukan Text</option>
+              <option value="#testimoni">Maklumat</option>
+              <option value="#manufakturing">Manufakturing</option>
+              <option value="#contact">Kontak</option>
+            </select>
+            <button type="button" class="btn btn-sm btn-primary px-3 py-2" id="formSearch">Search</button>
+          </div>
+
+          <div class="row gy-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Clients</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Projects</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Support</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Workers</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+          </div>
+        </div>
+
+        <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+          <img src="assets/img/babancong.png" class="img-fluid mb-lg-0 d-block" style="max-width: 100%; height: 75%;" alt="">
+        </div>
+
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <br>
+  <br>
+
+  <main id="main">
+    
+    
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimoni">
+      <div  class="container">
+        <div></div>
+        <div class="section-header" data-aos="fade-up">
+          <span>Maklumat</span>
+          <h2>Maklumat</h2>
+        </div>
+        <section class="testimonials">
+          <div class="container" data-aos="fade-up">
+    
+            <div class="slides-1 swiper">
+              <div class="swiper-wrapper">
+    
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <img src="assets/img/maklumat.jpg" class="testimonial-img" alt="">
+                    <!-- <h3>Saul Goodman</h3>
+                    <h4>Ceo &amp; Founder</h4>
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p> -->
+                  </div>
+                </div>
+    
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <img src="assets/img/maklumat.jpg" class="testimonial-img" alt="">
+                    <!-- <h3>Sara Wilsson</h3>
+                    <h4>Designer</h4>
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p> -->
+                  </div>
+                </div>
+    
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <img src="assets/img/maklumat.jpg" class="testimonial-img" alt="">
+                    <!-- <h3>Jena Karlis</h3>
+                    <h4>Store Owner</h4>
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p> -->
+                  </div>
+                </div>
+    
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <img src="assets/img/maklumat.jpg" class="testimonial-img" alt="">
+                    <!-- <h3>Matt Brandon</h3>
+                    <h4>Freelancer</h4>
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p> -->
+                  </div>
+                </div>
+    
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <img src="assets/img/maklumat.jpg" class="testimonial-img" alt="">
+                    <!-- <h3>John Larson</h3>
+                    <h4>Entrepreneur</h4>
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p> -->
+                  </div>
+                </div>
+    
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+    
+          </div>
+        </section>
+      </div>
+
+    </section>
+    <!-- End Testimonials Section -->
+
+    <section id="not" class="featured-services">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <!-- <span>Manufakturing</span>
+          <h2>Manufakturing</h2> -->
+
+        </div>
+        <div class="maklumat">
+          <div class="justify-content-center">
+            <nav>
+              <div class="nav nav-tabs align-items-center" id="nav-tab" role="tablist" style="font-size: 90%;">
+                <button class="nav-link mb-2 active" id="nav-info-tab" data-bs-toggle="tab" data-bs-target="#nav-info" type="button" role="tab" aria-controls="nav-info" aria-selected="true"><img src="assets/img/icon/ico/info.png" width="33" alt="">  Info</button>
+
+                <button class="nav-link mb-2" id="nav-syarat-tab" data-bs-toggle="tab" data-bs-target="#nav-syarat" type="button" role="tab" aria-controls="nav-syarat" aria-selected="false"><img src="assets/img/icon/ico/task-list.png" width="33" alt="">  Persyaratan</button>
+
+                <button class="nav-link mb-2" id="nav-waktu-tab" data-bs-toggle="tab" data-bs-target="#nav-waktu" type="button" role="tab" aria-controls="nav-waktu" aria-selected="false"><img src="assets/img/icon/ico/clipboard.png" width="33" alt="">  Waktu & Prosedur</button>
+
+                <button class="nav-link mb-2" id="nav-biaya-tab" data-bs-toggle="tab" data-bs-target="#nav-biaya" type="button" role="tab" aria-controls="nav-biaya" aria-selected="false"><img src="assets/img/icon/ico/price-list.png" width="33" alt="">  Biaya</button>
+
+                <button class="nav-link mb-2" id="nav-product-tab" data-bs-toggle="tab" data-bs-target="#nav-product" type="button" role="tab" aria-controls="nav-product" aria-selected="false"><img src="assets/img/icon/ico/box.png" width="33" alt="">  Produk</button>
+
+                <button class="nav-link mb-2" id="nav-ngaju-tab" data-bs-toggle="tab" data-bs-target="#nav-ngaju" type="button" role="tab" aria-controls="nav-ngaju" aria-selected="false"><img src="assets/img/icon/ico/delivery.png" width="33" alt="">  Pengajuan</button>
+
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-info" role="tabpanel" aria-labelledby="nav-info-tab">
+                <div class="row mt-3">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-header text-center">
+                        <i class="fa-solid fa-circle-info"></i> Info
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="nav-syarat" role="tabpanel" aria-labelledby="nav-syarat-tab">
+                <div class="row mt-3">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-header text-center">
+                        <i class="fa-solid fa-pen-to-square"></i> Persyaratan
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="nav-waktu" role="tabpanel" aria-labelledby="nav-waktu-tab">
+                <div class="row mt-3">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-header text-center">
+                        <i class="fa-solid fa-clipboard-list"></i> Waktu & Prosedur
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="nav-biaya" role="tabpanel" aria-labelledby="nav-biaya-tab">
+                <div class="row mt-3">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-header text-center">
+                        <i class="fa-solid fa-hand-holding-dollar"></i> Biaya
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="nav-product" role="tabpanel" aria-labelledby="nav-product-tab">
+                <div class="row mt-3">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-header text-center">
+                        <i class="fa-solid fa-box-open"></i> Produk
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="nav-ngaju" role="tabpanel" aria-labelledby="nav-ngaju-tab">
+                <div class="row mt-3">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-header text-center">
+                        <i class="fa-solid fa-list-check"></i> Pengajuan
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+
+          </div>
+        </div>
+        
+
+      </div>
+    </section>
+
+    <!-- ======= Featured Services Section ======= -->
+    <section id="manufakturing" class="featured-services">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <span>Manufakturing</span>
+          <h2>Manufakturing</h2>
+
+        </div>
+        <div class="maklumat">
+          <div class="justify-content-center">
+            <nav>
+              <div class="nav nav-tabs align-items-center" id="nav-tab" role="tablist" style="font-size: 85%;">
+                <button class="nav-link mb-2 active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><img src="assets/img/icon/job-description.png" width="33" alt="">  Sarana</button>
+
+                <button class="nav-link mb-2" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><img src="assets/img/icon/infrastructure.png" width="33" alt="">  Sarana Khusus</button>
+
+                <button class="nav-link mb-2" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><img src="assets/img/icon/language.png" width="33" alt="">  Tata Tertib & Kode Etik</button>
+
+                <button class="nav-link mb-2" id="nav-publik-tab" data-bs-toggle="tab" data-bs-target="#nav-publik" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><img src="assets/img/icon/customer-service (1).png" width="33" alt="">  SI Pelayanan Publik</button>
+
+                <button class="nav-link mb-2" id="nav-visi-tab" data-bs-toggle="tab" data-bs-target="#nav-visi" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><img src="assets/img/icon/vision.png" width="33" alt="">  Visi Misi & Motto</button>
+
+                <button class="nav-link mb-2" id="nav-pelayanan-tab" data-bs-toggle="tab" data-bs-target="#nav-pelayanan" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><img src="assets/img/icon/customer-service.png" width="33" alt="">  Pelayanan Utama</button>
+
+                <button class="nav-link mb-2" id="nav-pelaksana-tab" data-bs-toggle="tab" data-bs-target="#nav-pelaksana" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><img src="assets/img/icon/businessman.png" width="33" alt="">  Pelaksana</button>
+
+                <button class="nav-link mb-2" id="nav-dasar-tab" data-bs-toggle="tab" data-bs-target="#nav-dasar" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><img src="assets/img/icon/law.png" width="33" alt="">  Dasar Hukum</button>
+
+                <button class="nav-link mb-2" id="nav-maklumat-tab" data-bs-toggle="tab" data-bs-target="#nav-maklumat" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><img src="assets/img/icon/megaphone.png" width="33" alt="">  Maklumat</button>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="row mt-3">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-header text-center">
+                        <i class="fa-solid fa-building"></i> Sarana
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <div class="row mt-3">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-header text-center">
+                        <i class="fa-solid fa-building-circle-check"></i> Sarana Khusus
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <div class="row mt-3">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-header text-center">
+                        <i class="fa-solid fa-user-gear"></i> Tata Tertib & Kode Etik
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="nav-publik" role="tabpanel" aria-labelledby="nav-publik-tab">
+                <div class="row mt-3">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-header text-center">
+                        <i class="fa-solid fa-message"></i> SI Pelayanan Publik
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="nav-visi" role="tabpanel" aria-labelledby="nav-visi-tab">
+                <div class="row mt-3">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-header text-center">
+                        <i class="fa-solid fa-list-ol"></i> Visi Misi & Motto
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="nav-pelayanan" role="tabpanel" aria-labelledby="nav-pelayanan-tab">
+                <div class="row mt-3">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-header text-center">
+                        <i class="fa-solid fa-headset"></i> Pelayanan Utama
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="nav-pelaksana" role="tabpanel" aria-labelledby="nav-pelaksana-tab">
+                <div class="row mt-3">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-header text-center">
+                        <i class="fa-solid fa-user-tie"></i> Pelaksana
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="nav-dasar" role="tabpanel" aria-labelledby="nav-dasar-tab">
+                <div class="row mt-3">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-header text-center">
+                        <i class="fa-solid fa-gavel"></i> Dasar Hukum
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="nav-maklumat" role="tabpanel" aria-labelledby="nav-maklumat-tab">
+                <div class="row mt-3">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-header text-center">
+                        <i class="fa-solid fa-bullhorn"></i> Maklumat
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        
+
+      </div>
+    </section>
+    <!-- End Featured Services Section -->
+
+    <section id="pengaduan" class="services">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <!-- <span>Pengaduan<span>
+          <h2>Pengaduan<h2> -->
+
+        </div>
+        <div class="maklumat">
+          <div class="justify-content-center">
+            <nav>
+              <div class="nav nav-tabs align-items-center" id="nav-tab" role="tablist" style="font-size: 85%;">
+                <button class="nav-link mb-2 active" id="nav-web-tab" data-bs-toggle="tab" data-bs-target="#nav-web" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><img src="assets/img/icon/web-link.png" width="33" alt="">  Pengaduan Via Web </button>
+
+                <button class="nav-link mb-2" id="nav-wa-tab" data-bs-toggle="tab" data-bs-target="#nav-wa" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><img src="assets/img/icon/whatsapp.png" width="33" alt=""> Pengaduan Via WhatsApp</button>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-web" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="row mt-3">
+                  <div class="col-sm-12">
+                    <div class="card overflow-auto" style="">
+                      <div class="card-header text-center">
+                        <i class="fas-solid fa-phone"></i> Pengaduan Via Web
+                      </div>
+                      <div class="card-body">
+                        
+                        <div class="card my-3" style="height: 20rem;">
+                          <div class="card-header">
+                            <div class="d-flex justify-content-between ms-2 me-2">
+                              <h5 class="card-title text-weight-bold">Nama Saya</h5>
+                              <div>13-06-2022 09:50:52</div>
+                            </div>
+                          </div>
+                          <div class="card-body ms-2 me-2">
+                              <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi officiis maxime corporis, dolor aliquid debitis. Eum excepturi quibusdam aliquid, maxime mollitia atque nihil! Maxime, minima non. Quis saepe doloremque exercitationem.</div>
+                            <div class="modal-footer">
+                              <div class="btn btn-sm btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Tanggapan</div>
+                              <div class="collapse my-3" id="collapseExample">
+                                <div class="card">
+                                  <h5>Dinkes</h5><span class="my-2" style="font-size: 14px;">13-06-2022 09:50:52</span>
+                                  Some placeholder content for the collapse component.
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card my-3" style="height: 20rem;">
+                          <div class="card-header">
+                            <div class="d-flex justify-content-between ms-2 me-2">
+                              <h5 class="card-title text-weight-bold">Nama Saya</h5>
+                              <div>13-06-2022 09:50:52</div>
+                            </div>
+                          </div>
+                          <div class="card-body ms-2 me-2">
+                              <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi officiis maxime corporis, dolor aliquid debitis. Eum excepturi quibusdam aliquid, maxime mollitia atque nihil! Maxime, minima non. Quis saepe doloremque exercitationem.</div>
+                            <div class="modal-footer">
+                              <div class="btn btn-sm btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Tanggapan</div>
+                              <div class="collapse my-3" id="collapseExample">
+                                <div class="card">
+                                  <h5>Dinkes</h5><span class="my-2" style="font-size: 14px;">13-06-2022 09:50:52</span>
+                                  Some placeholder content for the collapse component.
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card my-3" style="height: 20rem;">
+                          <div class="card-header">
+                            <div class="d-flex justify-content-between ms-2 me-2">
+                              <h5 class="card-title text-weight-bold">Nama Saya</h5>
+                              <div>13-06-2022 09:50:52</div>
+                            </div>
+                          </div>
+                          <div class="card-body ms-2 me-2">
+                              <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi officiis maxime corporis, dolor aliquid debitis. Eum excepturi quibusdam aliquid, maxime mollitia atque nihil! Maxime, minima non. Quis saepe doloremque exercitationem.</div>
+                            <div class="modal-footer">
+                              <div class="btn btn-sm btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Tanggapan</div>
+                              <div class="collapse my-3" id="collapseExample">
+                                <div class="card">
+                                  <h5>Dinkes</h5><span class="my-2" style="font-size: 14px;">13-06-2022 09:50:52</span>
+                                  Some placeholder content for the collapse component.
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card my-3" style="height: 20rem;">
+                          <div class="card-header">
+                            <div class="d-flex justify-content-between ms-2 me-2">
+                              <h5 class="card-title text-weight-bold">Nama Saya</h5>
+                              <div>13-06-2022 09:50:52</div>
+                            </div>
+                          </div>
+                          <div class="card-body ms-2 me-2">
+                              <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi officiis maxime corporis, dolor aliquid debitis. Eum excepturi quibusdam aliquid, maxime mollitia atque nihil! Maxime, minima non. Quis saepe doloremque exercitationem.</div>
+                            <div class="modal-footer">
+                              <div class="btn btn-sm btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Tanggapan</div>
+                              <div class="collapse my-3" id="collapseExample">
+                                <div class="card">
+                                  <h5>Dinkes</h5><span class="my-2" style="font-size: 14px;">13-06-2022 09:50:52</span>
+                                  Some placeholder content for the collapse component.
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+          
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="nav-wa" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <div class="row mt-3">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-header text-center">
+                        <i class="fas-solid fa-phone"></i> Pengaduan Via WhatsApp
+                      </div>
+                      <div class="card-body">
+                        
+                        <div class="card">
+                          <div class="card-header">
+                            <div class="d-flex justify-content-between ms-2 me-2">
+                              <h5 class="card-title text-weight-bold">Nama Saya</h5>
+                              <div>13-06-2022 09:50:52</div>
+                            </div>
+                          </div>
+                          <div class="card-body ms-2 me-2">
+                              <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi officiis maxime corporis, dolor aliquid debitis. Eum excepturi quibusdam aliquid, maxime mollitia atque nihil! Maxime, minima non. Quis saepe doloremque exercitationem.</div>
+                            <div class="modal-footer">
+                              <div class="btn btn-sm btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Tanggapan</div>
+                              <div class="collapse my-3" id="collapseExample">
+                                <div class="card card-body">
+                                  <h5>Dinkes</h5><span class="my-2" style="font-size: 14px;">13-06-2022 09:50:52</span>
+                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        
+
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <span>Kontak</span>
+          <h2>Kontak</h2>
+
+        </div>
+
+        <div class="row gy-4 mt-4">
+
+          <div class="col-sm-6">
+
+            <div class="info-item d-flex">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h4>Lokasi:</h4>
+                <p>Jl. Proklamasi No. 7
+                  Desa Jayaraga Kecamatan Tarogong Kidul
+                  Kabupaten Garut Provinsi Jawa Barat 44151</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h4>Email:</h4>
+                <p>dinkesgarut1@gmail.com</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex">
+              <i class="bi bi-phone flex-shrink-0"></i>
+              <div>
+                <h4>Telepon:</h4>
+                <p>082115744646</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="col-sm-6">
+            <div>
+              <iframe style="border:0; width: 100%; height: 260px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.4257423828017!2d107.89737361431993!3d-7.192166472590001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68b0e47e94c3d7%3A0x29cde499dd38d2d5!2sDinas%20Kesehatan%20Kabupaten%20Garut!5e0!3m2!1sid!2sid!4v1658713794657!5m2!1sid!2sid" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="h4">SIPP Dinas Kesehatan Garut</span>
+          </a>
+          <p>SIPP Merupakan media informasi elektronik satu pintu meliputi penyimpanan dan pengelolaan informasi serta mekanisme penyampaian informasi dari penyelenggara pelayanan publik kepada masyarakat.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Kontak Kami</h4>
+          <p>
+            Jl. Proklamasi No.7, Jayaraga, Kec. Tarogong Kidul, Kabupaten Garut, Jawa Barat 44151 <br><br>
+            <strong>Phone:</strong> 082115744646            <br>
+            <strong>Email:</strong> dinkesgarut1@gmail.com<br>
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>SIPP</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">Dinkes Garut</a>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.5/js/standalone/selectize.min.js" integrity="sha512-JFjt3Gb92wFay5Pu6b0UCH9JIOkOGEfjIi7yykNWUwj55DBBp79VIJ9EPUzNimZ6FvX41jlTHpWFUQjog8P/sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $(document).ready(function(){
+      $('#formSearch').click(function() {
+        window.location.href = $('#search').val();
+      });
+      $('input').attr('autocomplete','off')
+    });
+    $("#search").selectize({
+      create: false,
+      sortField: "text",
+
+    });
+  </script>
+
+</body>
+
+</html>
