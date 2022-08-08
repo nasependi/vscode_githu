@@ -46,6 +46,12 @@
       outline: none!important;
       box-shadow: none!important;
     }
+    .morecontent span {
+    display: none;
+    }
+    .morelink {
+        display: block;
+    }
   </style>
 
   <!-- =======================================================
@@ -413,7 +419,9 @@
           <div class="justify-content-center">
             <nav>
               <div class="nav nav-tabs align-items-center fw-bold" id="nav-tab" role="tablist" style="font-size: 85%;">
-                <button class="nav-link mb-2 active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><img src="assets/img/icon/job-description.png" width="33" alt="">  Sarana</button>
+                <button class="nav-link mb-2 active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                  <img src="assets/img/icon/job-description.png" width="33" alt="">  Sarana
+                </button>
 
                 <button class="nav-link mb-2" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><img src="assets/img/icon/infrastructure.png" width="33" alt="">  Sarana Khusus</button>
 
@@ -606,7 +614,7 @@
         <div class="maklumat">
           <div class="justify-content-center">
             <nav>
-              <div class="nav nav-tabs align-items-center fw-bold" id="nav-tab" role="tablist" style="font-size: 85%;">
+              <div class="nav nav-pills align-items-center fw-bold" id="nav-tab" role="tablist" style="font-size: 85%;">
                 <button class="nav-link mb-2 active" id="nav-web-tab" data-bs-toggle="tab" data-bs-target="#nav-web" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><img src="assets/img/icon/web-link.png" width="33" alt="">  Pengaduan Via Web </button>
 
                 <button class="nav-link mb-2" id="nav-wa-tab" data-bs-toggle="tab" data-bs-target="#nav-wa" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><img src="assets/img/icon/whatsapp.png" width="33" alt=""> Pengaduan Via WhatsApp</button>
@@ -616,46 +624,94 @@
               <div class="tab-pane fade show active" id="nav-web" role="tabpanel" aria-labelledby="nav-home-tab">
                 <div class="row mt-3">
                   <div class="col-sm-12">
-                    <div class="card overflow-auto" style="height: 30rem;">
-                      <div class="card-header text-center d-flex justify-content-between align-items-center">
-                        <div>
-                          <i class="fas-solid fa-phone"></i> Pengaduan Via Web
-                        </div>
-                        <div>
-                          <a href="#" class="btn btn-primary btn-sm text-white">Formulir Maseh</a>
-                        </div>
-                      </div>
-                      <div class="card-body">
-                        <div class="row gy-2 gy-md-3">
-                          <!-- Batas Card -->
-                          <div class="card border-0 shadow-sm border-top border-light p-0">
-                            <div class="card-body p-0">
-                              <div class="d-flex align-items-center border-bottom border-light px-3 py-2 px-md-3 py-md-3">
-                                <div class="flex-shrink-0 me-3">
-                                  <img src="https://pengaduan.banyuwangikab.go.id/assets/img/human.jpg" width="35" height="35" class="rounded-pill" alt="">
-                                </div>
-                                <div>
-                                  <h6 class="mb-0 text-dark">Nasep Ependi</h6>
-                                  <small class="mt-0 text-secondary text-muted" style="font-size: x-small;">07-08-2022 10:20:31 | Skpd tujuan : -Tim Pengelola Pengaduan Pelayanan Publik</small>
-                                </div>
-                              </div>
-                              <div class="px-3 py-2 px-md-3 py-md-3 text-dark">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et delectus culpa corporis labore facilis, nam nihil fuga sit deserunt ex impedit exercitationem quisquam eligendi, sapiente obcaecati debitis reiciendis quos voluptatem!
-                              </div>
-                            </div>
-                            <div class="card-footer border-0 bg-white px-4 pb-3 pt-0 d-flex justify-content-end">
-                              <div class="badge bg-primary my-2" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">1 Tanggapan</div>
-                            </div>
-                            <div class="collapse" id="collapseExample">
-                              <div class="card card-body ms-3 me-3 my-3">
-                                Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                              </div>
-                            </div>
+                    <div class="card rounded-2" style="max-height: 80vh;">
+                        <div class="card-header text-center d-flex justify-content-between align-items-center bg-light">
+                          <div class="fw-bold">
+                            <i class="fas-solid fa-globe"></i> Pengaduan Via Web
                           </div>
-        
+                          <div>
+                            <a href="#" class="btn btn-primary btn-sm text-white">Formulir</a>
+                          </div>
                         </div>
-
-                      </div>
+                        <div class="card-body p-0 overflow-auto">
+                            <!-- Batas Card -->
+                            <div>
+                              <div class="border-bottom">
+                                <div class="d-flex align-items-center border-bottom px-3 py-2 px-md-3 py-md-3">
+                                  <div class="flex-shrink-0 me-3">
+                                    <img src="https://pengaduan.banyuwangikab.go.id/assets/img/human.jpg" width="35" height="35" class="rounded-pill" alt="">
+                                  </div>
+                                  <div>
+                                    <h6 class="mb-0 text-dark">Nasep Ependi</h6>
+                                    <small class="mt-0 text-secondary text-muted" style="font-size: x-small;">07-08-2022 10:20:31 | Skpd tujuan : -Tim Pengelola Pengaduan Pelayanan Publik</small>
+                                  </div>
+                                </div>
+                                <div class="px-3 py-2 px-md-3 py-md-3 text-dark more">
+                                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et delectus culpa corporis labore facilis, nam nihil fuga sit deserunt ex impedit exercitationem quisquam eligendi, sapiente obcaecati debitis reiciendis quos voluptatem!
+                                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit fuga cum laboriosam delectus incidunt id minima, nam aspernatur! Nam explicabo suscipit aliquam, laborum adipisci sit doloribus nemo praesentium temporibus omnis magni accusamus aperiam perferendis quasi odit dolores labore tenetur assumenda esse eveniet! Consequatur inventore qui deleniti iure assumenda. Hic praesentium ad ipsa facilis quam, vitae non similique dolorum aspernatur nisi molestiae harum cumque quisquam, magnam explicabo! Officia eaque recusandae sunt accusantium corrupti eveniet minus! Explicabo, illum? Quasi, eligendi nemo. Assumenda, numquam? Ex omnis eveniet cupiditate voluptas nulla quia! Consequatur tempora quis labore nemo doloribus aspernatur voluptates animi reprehenderit? Saepe, porro!
+                                </div>
+                                <div class="card-footer border-0 bg-white px-4 pb-3 pt-0 d-flex justify-content-end">
+                                  <div class="badge bg-primary my-2" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">1 Tanggapan</div>
+                                </div>
+                              </div>
+                              <!-- Komentar -->
+                              <div class="collapse" id="collapseExample">
+                                <div class="d-flex">
+                                  <div class="d-flex align-items-start border-bottom ps-5 pe-3 py-2 pr-md-3 py-md-3">
+                                    <div class="flex-shrink-0 me-3">
+                                      <img src="https://pengaduan.banyuwangikab.go.id/assets/img/human.jpg" width="35" height="35" class="rounded-pill" alt="">
+                                    </div>
+                                    <div>
+                                      <h6 class="mb-0 text-dark">Administrator</h6>
+                                      <small class="mt-0 text-secondary text-muted" style="font-size: x-small;">07-08-2022 10:20:31</small>
+                                      <div class="rounded border mt-2 px-3 py-2">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsa omnis dignissimos esse id quae maxime iusto numquam sunt temporibus praesentium iste quas, hic quis blanditiis eveniet, repudiandae ipsum in.
+                                      </div>
+                                    </div>
+                                  </div>  
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Batas Card -->
+                            <div>
+                              <div class="border-bottom">
+                                <div class="d-flex align-items-center border-bottom px-3 py-2 px-md-3 py-md-3">
+                                  <div class="flex-shrink-0 me-3">
+                                    <img src="https://pengaduan.banyuwangikab.go.id/assets/img/human.jpg" width="35" height="35" class="rounded-pill" alt="">
+                                  </div>
+                                  <div>
+                                    <h6 class="mb-0 text-dark">Nasep Ependi</h6>
+                                    <small class="mt-0 text-secondary text-muted" style="font-size: x-small;">07-08-2022 10:20:31 | Skpd tujuan : -Tim Pengelola Pengaduan Pelayanan Publik</small>
+                                  </div>
+                                </div>
+                                <div class="px-3 py-2 px-md-3 py-md-3 text-dark more">
+                                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et delectus culpa corporis labore facilis, nam nihil fuga sit deserunt ex impedit exercitationem quisquam eligendi, sapiente obcaecati debitis reiciendis quos voluptatem!
+                                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit fuga cum laboriosam delectus incidunt id minima, nam aspernatur! Nam explicabo suscipit aliquam, laborum adipisci sit doloribus nemo praesentium temporibus omnis magni accusamus aperiam perferendis quasi odit dolores labore tenetur assumenda esse eveniet! Consequatur inventore qui deleniti iure assumenda. Hic praesentium ad ipsa facilis quam, vitae non similique dolorum aspernatur nisi molestiae harum cumque quisquam, magnam explicabo! Officia eaque recusandae sunt accusantium corrupti eveniet minus! Explicabo, illum? Quasi, eligendi nemo. Assumenda, numquam? Ex omnis eveniet cupiditate voluptas nulla quia! Consequatur tempora quis labore nemo doloribus aspernatur voluptates animi reprehenderit? Saepe, porro!
+                                </div>
+                                <div class="card-footer border-0 bg-white px-4 pb-3 pt-0 d-flex justify-content-end">
+                                  <div class="badge bg-primary my-2" data-bs-toggle="collapse" href="#collapseExampl" role="button" aria-expanded="false" aria-controls="collapseExample">1 Tanggapan</div>
+                                </div>
+                              </div>
+                              <!-- Komentar -->
+                              <div class="collapse" id="collapseExampl">
+                                <div class="d-flex">
+                                  <div class="d-flex align-items-start border-bottom ps-5 pe-3 py-2 pr-md-3 py-md-3">
+                                    <div class="flex-shrink-0 me-3">
+                                      <img src="https://pengaduan.banyuwangikab.go.id/assets/img/human.jpg" width="35" height="35" class="rounded-pill" alt="">
+                                    </div>
+                                    <div>
+                                      <h6 class="mb-0 text-dark">Administrator</h6>
+                                      <small class="mt-0 text-secondary text-muted" style="font-size: x-small;">07-08-2022 10:20:31</small>
+                                      <div class="rounded border mt-2 px-3 py-2">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsa omnis dignissimos esse id quae maxime iusto numquam sunt temporibus praesentium iste quas, hic quis blanditiis eveniet, repudiandae ipsum in.
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit suscipit pariatur, nesciunt qui laudantium error perspiciatis, obcaecati mollitia veritatis aut eveniet et dicta accusantium velit, atque id praesentium nobis numquam. Voluptatum dolores et perspiciatis modi dolorum ad provident impedit eos? Voluptatum dolores corporis accusantium maiores?
+                                      </div>
+                                    </div>
+                                  </div>  
+                                </div>
+                              </div>
+                            </div>
+                        </div>
                     </div>
                   </div>
                 </div>
@@ -842,6 +898,44 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $(document).ready(function() {
+        // Configure/customize these variables.
+        var showChar = 300;  // How many characters are shown by default
+        var ellipsestext = "...";
+        var moretext = "Show more";
+        var lesstext = "Show less";
+        
+
+        $('.more').each(function() {
+            var content = $(this).html();
+    
+            if(content.length > showChar) {
+    
+                var c = content.substr(0, showChar);
+                var h = content.substr(showChar, content.length - showChar);
+    
+                var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+    
+                $(this).html(html);
+            }
+    
+        });
+    
+        $(".morelink").click(function(){
+            if($(this).hasClass("less")) {
+                $(this).removeClass("less");
+                $(this).html(moretext);
+            } else {
+                $(this).addClass("less");
+                $(this).html(lesstext);
+            }
+            $(this).parent().prev().toggle();
+            $(this).prev().toggle();
+            return false;
+        });
+    });
+    </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.5/js/standalone/selectize.min.js" integrity="sha512-JFjt3Gb92wFay5Pu6b0UCH9JIOkOGEfjIi7yykNWUwj55DBBp79VIJ9EPUzNimZ6FvX41jlTHpWFUQjog8P/sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
     $(document).ready(function(){
